@@ -46,6 +46,9 @@ function App() {
       <h1 className="text-3xl font-bold underline">
         Hello!
       </h1>
+      <button className="border-red-100 border-2 m-1 p-3 cursor-pointer" onClick={() => {
+        return timeline.paused() ? timeline.play() : timeline.pause();
+      }}>Play/Pause</button>
     </>
   )
 }
